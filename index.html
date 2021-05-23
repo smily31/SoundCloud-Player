@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>SoundCloud Player</title>
+    <link rel='stylesheet' href='styles/main.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap" rel="stylesheet">
+</head>
+<body id="soundcloud-player">
+
+<div class="ui container col">
+    <div class="col-left js-playlist">
+        <div class="inner">
+            <span class="pl-heading">Your Playlist Here</span>    
+        </div>
+    </div>
+    <div class="col-right">
+        <div class="main">
+            <div class="ui massive icon input">
+                <input type="text" placeholder="Search for a song or artist..." class="js-search input-search ">
+                <i class="glyphicon glyphicon-search search icon js-submit"></i>
+            </div>
+
+            <div class="search-results js-search-results ui cards">
+                <h2>Please type in a search value!</h2>
+              <!-- cards -->
+                
+            </div>
+
+            <!-- Reset button  -->
+            <div class="reset">
+                <button class="reset-button">RESET</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
+<script src="javascript/main.js"></script>
+</body>
+</html>
